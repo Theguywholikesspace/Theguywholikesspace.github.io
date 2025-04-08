@@ -1,10 +1,183 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Hello!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Marcello headshot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1a73e8;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0b4db8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-image: url('https://media.licdn.com/dms/image/v2/D4E16AQEuLQNOpwx5Wg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1738716196455?e=1749686400&v=beta&t=rDXd74GvUAVCuUxqp-pHGoDA8--i7QGbkKvtnjvvAZU'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6); /* darker overlay */
+      z-index: 0;
+    }
+
+    header .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    main {
+      background-color: white;
+      padding: 3rem 0;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+
+    .about div {
+      flex: 1;
+    }
+
+    .about h2,
+    .interests h2,
+    .contact h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .interests ul {
+      padding-left: 1.5rem;
+    }
+
+    .interests li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-<p>You have found the brand new work in progress Adam Marcello's (Haverford College) website! Yay!! </p>
-<p>Expect progress soon!<p>
+  <header>
+    <div class="container">
+      <h1>Adam Marcello</h1>
+      <p>College Freshman at Haverford College | Physics and Astronomy major</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="about">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQETJfxrCd20AA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727200630042?e=1749686400&v=beta&t=cUXYBkROSK-Y07K8Q_DGM0RCzp1h8-7asxmvtGTn0JA" alt="Adam Marcello" />
+        <div>
+          <h2>About Me</h2>
+          <p> Hello there! I'm Adam Marcello, a freshman at Haverford College planning to major in Physics and Astronomy as well as a minor in Applied Math and Chemistry. My primary interest lies in exoplanets, particularly their formation and evolution from a stellar disk. I am fascinated by the processes that shape planetary systems and hope to contribute to our understanding of their origins, dynamics, and potential habitability. Through my studies, I aim to explore the physics governing these distant worlds and engage in research that advances our knowledge of planetary formation.</p>
+        </div>
+      </section>
+
+      <section class="interests">
+        <h2>Projects</h2>
+        <ul>
+          <li>Exploring the correlation between retweet counts of the current U.S. President's tweets and same-day percentage changes in the S&P 500 index.</li>
+          <li>Studying neutral hydrogen (HI) in Milky Way analog galaxies</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Connect</h2>
+        <p>Feel free to reach out to me here:</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/adam-marcello-246105268/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#" target="https://github.com/Theguywholikesspace">GitHub</a>
+          <a href="mailto:amarcello@haverford.edu">Email</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Last updated 4/7/2025 — Adam Marcello</p>
+  </footer>
 </body>
 </html>
