@@ -14,8 +14,9 @@
     body {
       font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
       background-color: #0a1f44; /* deep navy */
-	  color: #f0f0f0;
+      color: #f0f0f0;
       line-height: 1.6;
+      margin-left: 180px; /* make room for sidebar */
     }
 
     a {
@@ -26,6 +27,43 @@
 
     a:hover {
       color: #ffffff;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 180px;
+      background-color: #081c3a;
+      padding-top: 2rem;
+      z-index: 1000;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: #76b3fa;
+      font-size: 1rem;
+      font-weight: bold;
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #0f2e5d;
+      color: #fff;
+      border-radius: 4px;
     }
 
     .container {
@@ -141,6 +179,19 @@
   </style>
 </head>
 <body>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Connect</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+
   <header>
     <div class="container">
       <h1>Adam Marcello</h1>
@@ -150,7 +201,7 @@
 
   <main>
     <div class="container">
-      <section class="about">
+      <section class="about" id="about">
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQETJfxrCd20AA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727200630042?e=1749686400&v=beta&t=cUXYBkROSK-Y07K8Q_DGM0RCzp1h8-7asxmvtGTn0JA" alt="Adam Marcello" />
         <div>
           <h2>About Me</h2>
@@ -158,16 +209,16 @@
         </div>
       </section>
 
-      <section class="interests">
+      <section class="interests" id="projects">
         <h2>Projects</h2>
         <ul>
           <li>Exploring the correlation between retweet counts of the current U.S. President's tweets and same-day percentage changes in the S&P 500 index</li>
           <li>Studying neutral hydrogen (HI) in Milky Way analog galaxies</li>
-		  <li>Photographing the Milky Way Galaxy at Haverford College</li>
+          <li>Photographing the Milky Way Galaxy at Haverford College</li>
         </ul>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Connect</h2>
         <p>Feel free to reach out to me here:</p>
         <div class="socials">
